@@ -1,0 +1,22 @@
+.pagination-container {
+  /* bottom: 0;
+  left: 0; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem;
+  color: antiquewhite;
+  /* position: absolute; */
+}
+
+.page-item {
+  border-left: 1px solid #4a4a4a;
+  background: #212121;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.page-item:hover {
+  cursor: pointer;
+  -webkit-text-stroke: 2px var(--color);
+  color: transparent;
+}

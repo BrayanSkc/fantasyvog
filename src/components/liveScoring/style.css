@@ -1,0 +1,74 @@
+.live-scoring-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+.live-scoring-header {
+  display: flex;
+  height: 3rem;
+  background: #f4f4f4;
+  border-radius: 6px 6px 0px 0px;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem;
+}
+.title-live-scoring {
+  font-weight: 900;
+  font-size: 0.8rem;
+  color: #343434;
+}
+.fixture-scoring-container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 6px;
+}
+.item-live-scoring {
+  display: grid;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  grid-template-columns: 2fr 1fr 2fr;
+  padding: 1rem;
+}
+.team-fixture-scoring {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.team-fixture-scoring-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+.team-name-scoring {
+  font-weight: Bold;
+  color: #343434;
+  display: flex;
+}
+.team-logo-scoring {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px #00000040;
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+.logo-scoring {
+  object-fit: contain;
+  height: 2rem;
+}
+.scoring-live-team {
+  background: #ffb300;
+  box-shadow: 0px 4px 10px #00000040;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score-live {
+  font-weight: bold;
+  color: var(--light);
+}

@@ -1,0 +1,56 @@
+.container-table-prize {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: auto;
+  overflow: hidden;
+}
+.header-table-prize {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background: #f4f4f4;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 1;
+}
+
+.title-table-prize {
+  color: #343434;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.item-table-prize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #ffff;
+  height: 2rem;
+  border: 1px solid #efefef;
+  opacity: 1;
+  padding: 0 1rem;
+}
+.position-table-prizes {
+  font-size: 0.8rem;
+  color: #00000066;
+  font-weight: bold;
+}
+.position-table-prizes-top {
+  font-size: 0.8rem;
+  color: var(--green);
+  font-weight: bold;
+}
+.points-table-prizes {
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+.Trophy {
+  height: 1rem;
+}
+.is-top {
+  background: #fafafa;
+}

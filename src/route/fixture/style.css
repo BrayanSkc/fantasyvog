@@ -1,0 +1,52 @@
+.fixture-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.91);
+}
+
+.title-fixture-next {
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+  font-size: 1.42rem;
+  padding-top: 1rem;
+}
+.match-container {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-data {
+  width: 95%;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+.fixture-footer-pagination {
+  width: 100%;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+
+@media ( max-width: 599px) {
+  .match-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .team-data {
+    width: 100%;
+  }
+  .match-date-details {
+    font-size: 0.5rem;
+  }
+  .fixture-footer-pagination {
+    position: relative;
+    background: none;
+  }
+}

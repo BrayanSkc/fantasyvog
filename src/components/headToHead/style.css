@@ -1,0 +1,121 @@
+.head-to-head-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+}
+.btn-head-primary {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.send {
+  background: #ffb300;
+  width: 100%;
+}
+.decline {
+  background: #ff2f2f;
+  width: 100%;
+}
+.head-to-head-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: transparent linear-gradient(180deg, #95b73a 0%, #4d9f29 100%);
+  border-radius: 6px;
+  padding: 1rem;
+}
+.text-information {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: var(--light);
+  margin: 0.5rem;
+}
+
+.information-players-head {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.information-score {
+  display: flex;
+  margin: 0.5rem;
+}
+.scored-left {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+.scored-right {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--light);
+}
+.footer-scored {
+  font-weight: bold;
+  color: var(--light);
+  font-size: 0.8rem;
+}
+/*Opcion dos*/
+
+.body-head-to-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgb(36, 36, 36, 0.8);
+  border: 1px solid #292929;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.head-to-head-container-two {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 0;
+  width: 100%;
+}
+.title-head-mode-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.title-mode-two {
+  font-weight: bold;
+  color: var(--light);
+  font-size: 1.2rem;
+}
+.text-mode-two {
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+.footer-head-to-head {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0 0 0;
+  border: 1px solid #292929;
+  border-radius: 0px 0px 6px 6px;
+  padding: 5px;
+}
+.tr-information-players {
+  display: flex;
+  align-items: center;
+}
+.th-information-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.td-name-player {
+  margin-top: 3px;
+  font-size: 0.8rem;
+  color: var(--light);
+}
+.img-information-player {
+  border-radius: 50%;
+  height: 4rem;
+}

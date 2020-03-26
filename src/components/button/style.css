@@ -1,0 +1,66 @@
+.button-element {
+  color: var(--light);
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: var(--color);
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 1px 4px 10px -1px rgba(0, 0, 0, 0.4);
+}
+.button-element::before {
+  content: "";
+  opacity: 0;
+}
+.be-animation::before {
+  animation: ripple 0.5s forwards;
+}
+.be-ghost {
+  background: transparent;
+  color: var(--dark);
+  border: 1px solid var(--dark-l1);
+}
+.be-fill:hover::before,
+.be-ghost:hover::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+  transition: opacity 0.5s;
+}
+.be-fill:hover::before {
+  background-color: var(--light);
+}
+.be-ghost:hover::before {
+  background-color: var(--dark);
+}
+@keyframes ripple {
+  0% {
+    opacity: 0.25;
+    width: 1vh;
+    height: 1vh;
+  }
+  60% {
+    opacity: 0.5;
+    width: 25vh;
+    height: 25vh;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+.button-element:disabled {
+  background: gray;
+  color: var(--dark);
+}
+/* 
+@media (max-width: 599px) {
+  .button-element {
+    height: 4rem;
+    box-shadow: none;
+  }
+} */

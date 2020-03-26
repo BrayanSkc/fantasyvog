@@ -1,0 +1,72 @@
+.all-players-container {
+  width: 100%;
+  background: rgba(28, 28, 28, 1);
+  padding-bottom: 1rem;
+
+}
+.all-player-header-contest {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #313131;
+  border: 1px solid #393939;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0 16%;
+}
+.all-player-filter-left {
+  display: flex;
+  align-items: center;
+}
+.all-player-filter-right {
+  display: flex;
+}
+/*Header */
+.player-selected-all-player {
+  display: flex;
+  flex-direction: column;
+  width: 6rem;
+  height: 3rem;
+  background: #292929;
+  border: 1px solid #393939;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin: 0.25rem;
+}
+.title-player-selected {
+  color: var(--light);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.quantity-player-selected {
+  font-weight: Bold;
+  margin-top: 1px;
+  color: var(--diners);
+  text-shadow: 0px 0px 10px var(--diners);
+  font-size: 0.8rem;
+}
+/*2nd Header*/
+.all-player-second-header {
+  display: flex;
+  margin: 0.5rem;
+  align-items: flex-end;
+  padding: 0 16%;
+  height: 3rem;
+  justify-content: space-between;
+}
+.position-player {
+  color: var(--light);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+/*Body Card*/
+.all-players-body-cards {
+  display: grid;
+  margin-right: 0.5rem;
+  width: 100%;
+  grid-template-columns: repeat(3, 2fr);
+  padding: 0 16.5%;
+  grid-gap: 0.8rem;
+
+}

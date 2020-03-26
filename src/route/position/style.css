@@ -1,0 +1,144 @@
+.background-container-table {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  background: rgba(25, 25, 25, 0.81);
+}
+
+.container-table {
+  display: block;
+  margin: auto;
+  width: 90%;
+  background: rgba(255, 255, 255, 100);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.position-header {
+  background: linear-gradient(to right, #3f1052, #330066, #3f1052);
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.title-table {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  color: var(--light);
+  font-size: 2.5rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  width: 80%;
+}
+
+.table-container {
+  width: 100%;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+.title-th-position {
+  color: var(--dark);
+  font-family: "Roboto";
+  font-weight: normal;
+  border-bottom: 0.1px solid var(--borders);
+  }
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+td, */
+.td-container-position {
+  padding: 0.5rem 0;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  font-family: "Roboto";
+}
+.title-th-position {
+  width: 6rem;
+  height: 2rem;
+  font-family: "Roboto";
+  text-align: center;
+}
+.tr-container-position:hover {
+  background-color: rgba(134, 127, 127, 0.137);
+  cursor: pointer;
+  color: var(--dark);
+}
+.td-container-position {
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
+  font-family: "Roboto";
+}
+.position-shield {
+  height: 23px;
+  width: 23px;
+}
+.td-container-position-team-name {
+  width: 17%;
+  height: 2rem;
+  text-align: auto;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+.position-logo-head {
+  display: flex;
+  justify-content: flex-end;
+  width: 6rem;
+  height: 3rem;
+
+}
+
+.table-footer-pagination {
+  width: 100%;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 599px) {
+  .background-container-table {
+    padding: 0.5rem;
+  }
+  .container-table {
+    width: 100%;
+  }
+  .position-logo-head {
+    display: none;
+  }
+  .position-header {
+    height: 3rem;
+  }
+  .position-header {
+    font-size: 1.3rem;
+  }
+  .team-container {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    overflow-x: scroll;
+  }
+
+  .td-container-position-team-name {
+    display: flex;
+    /* position: absolute; */
+    width: 3em;
+    align-items: center;
+    font-size: 0.6rem;
+  }
+  .title-table {
+    font-size: 0.5rem;
+  }
+  .title-th-position {
+    padding-right: 1rem;
+  }
+  .td-container-position {
+    font-size: 0.8rem;
+  }
+}

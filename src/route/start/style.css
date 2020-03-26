@@ -1,0 +1,66 @@
+.start-container {
+  display: flex;
+  width: 100%;
+  background: #1c1c1c;
+  min-height: 100%;
+  padding: 2rem 15rem;
+
+}
+.title-go-back {
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.body-start-container {
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.header-body-start {
+  display: flex;
+  background: #313131;
+  border: 1px solid #292929;
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.btn-body-start-primary {
+  display: flex;
+  background: var(--primary);
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  width: 50%;
+  height: 2rem;
+  text-align: center;
+}
+.btn-body-start-secondary {
+  display: flex;
+  background: var(--green);
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  width: 50%;
+  height: 2rem;
+  text-align: center;
+}
+.title-players {
+  margin-bottom: 0.5rem;
+  color: var(--light);
+  justify-self: left;
+}
+.recent-players-start{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem 0.5rem ;
+}
+.list-card-recent{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-column-gap: 0.5rem;
+
+}

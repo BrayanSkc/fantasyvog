@@ -1,0 +1,62 @@
+.cards-container {
+  display: flex;
+  width: 100%;
+  background: #313131 0% 0% no-repeat padding-box;
+  border: 1px solid #292929;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: var(--light)
+}
+.rank-leaders{
+  color: var(--diners);
+  text-shadow: 0px 0px 15px #0D791E;
+  padding: 0 1rem 0 0;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.pic-user {
+  border-radius: 50%;
+  max-height: 3rem;
+}
+.name-left-card {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: (var--light);
+}
+.user-data-card {
+  padding-left: 1rem;
+}
+.dinner-left-card {
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  color: rgba(250, 250, 250, 0.5);
+}
+.btn-friends-design-one {
+  background: #3e3e3e;
+  border: 1px solid #292929;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  height: 2.3rem;
+}
+.btn-friends-design-profile-ok {
+    border-radius: 50%;
+    background: none;
+    border: 1px solid var(--diners);
+    box-shadow: 0 0 1px 0 var(--diners);
+    color: var(--diners);
+    margin: 0.5rem;
+  }
+  .btn-friends-design-profile-cancel {
+  border-radius: 50%;
+  background: none;
+  border: 1px solid red;
+  box-shadow: 0 0 1px 0 red;
+  color: red;
+  margin: 0.5rem;
+}

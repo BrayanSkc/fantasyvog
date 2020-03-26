@@ -1,0 +1,129 @@
+.screen-container {
+background: rgb(36,36,36,0.5);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.chat-bar-container {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  background: #f4f4f4;
+  box-shadow: 0px 0px 6px #00000057;
+  border-radius: 6px 6px 0px 0px;
+  width: 18%;
+  padding: 0.5rem;
+}
+.title-chat-bar {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.chat-open-container {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  right: 20%;
+  background: #1c1c1c;
+  box-shadow: 0px 0px 6px #00000057;
+  border-radius: 6px 6px 0px 0px;
+  width: 25%;
+}
+.header-open-chat {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark);
+  padding: 0 1rem;
+  width: 100%;
+}
+.header-friends-open-chat {
+  display: flex;
+  position: absolute;
+  padding: 0 1rem;
+  top: 3rem;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  background: #313131;
+  border: 1px solid #292929;
+}
+.body-open-chat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25rem;
+  padding: 6rem 1rem;
+}
+.title-open-chat {
+  color: var(--light);
+}
+.message-user-left {
+  display: flex;
+  color: var(--light);
+  width: 75%;
+  background: #699815;
+  border-radius: 6px;
+  padding: 1rem;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.text-message-left {
+  font-size: 0.8rem;
+  display: flex;
+  text-align: left;
+  padding: 0 1rem;
+}
+.avatar-chat {
+  height: 3rem;
+}
+
+.message-user-right {
+  display: flex;
+  margin-left: auto;
+  width: 75%;
+  background: var(--light);
+  border-radius: 6px;
+  padding: 1rem;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.text-message-right {
+  font-size: 0.8rem;
+  display: flex;
+  text-align: left;
+  padding: 0 1rem;
+  color: var(--dark);
+}
+.footer-chat-send {
+  display: flex;
+  background: var(--light);
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 6px 6px 0 0;
+  padding: 0 0.5rem;
+}
+.typing-chat {
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 80%;
+}
+.icon-chat-end {
+  height: 1rem;
+  margin: 0.3rem;
+}

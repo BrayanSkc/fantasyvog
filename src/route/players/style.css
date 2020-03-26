@@ -1,0 +1,169 @@
+.players-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 1);
+}
+.header-filter-player-position {
+  background: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  color: var(--light);
+}
+.header-filter-player {
+  display: flex;
+  margin: auto;
+  justify-content: flex-end;
+  align-items: center;
+  width: 65%;
+  height: 3rem;
+  color: var(--light);
+}
+.player-container-cards {
+  /* margin-top: .5rem; */
+  display: flex;
+  justify-content: center;
+  width: 83%;
+  height: 75%;
+  flex-wrap: wrap;
+  /* margin-left: 3.4rem; */
+  max-width: 70rem;
+  min-height: 426px;
+  margin: 0.5rem auto 0 auto;
+}
+
+.btn-secondary-player-custom {
+  background: #292929 0% 0% no-repeat padding-box;
+  border: 1px solid #3e3e3e;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  font-size: 0.676rem;
+  opacity: 1;
+  color: var(--light);
+  height: 2.3rem;
+}
+.btn-secondary-player-custom-two {
+  background: #292929 0% 0% no-repeat padding-box;
+  border: 1px solid #3e3e3e;
+  border-radius: 6px;
+  opacity: 1;
+  color: var(--light);
+  height: 2rem;
+  margin-left: 0.5rem;
+  font-family: "Roboto";
+}
+
+.player-container-pagination {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 73.5%;
+  position: absolute;
+  bottom: 0;
+}
+.player-footer-container {
+  display: flex;
+  background-color: #292929;
+  width: 100%;
+  height: 1.8rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.header-filter-player-container {
+  display: flex;
+}
+.header-filter-btn-this-team {
+  display: flex;
+  align-items: center;
+  border-left: 0.5px solid #292929;
+  padding: 0 1rem;
+  margin-left: 0.5rem;
+}
+.btn-aligns-player-selected {
+  display: flex;
+  flex-direction: column;
+}
+.layer-details-btn {
+  font: bold 0.7rem Roboto;
+  color: #0b9321;
+  text-shadow: 0 0 0.8rem #0b9321;
+}
+.btn-player-position-img {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.display-image-position {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0.2rem;
+}
+.display-image-position:hover .btn-secondary-player-position {
+  background: none;
+  border-left: 0.5px solid var(--color);
+  border-right: 0.5px solid var(--color);
+  border-bottom: 0.5px solid var(--color);
+  color: var(--color);
+}
+
+.display-image-position:hover .profile-selected-img {
+  border-top: 0.5px solid var(--color);
+  border-left: 0.5px solid var(--color);
+  border-right: 0.5px solid var(--color);
+}
+.btn-secondary-player-position {
+  background: none;
+  margin-top: -2rem;
+  height: 1.3rem;
+}
+
+.profile-selected-img {
+  height: 1.5rem;
+  border-radius: 5rem;
+  border: 2px solid #1a1a1a;
+  background: #1a1a1a;
+  margin-bottom: -0.19rem;
+}
+@media (max-width: 599px) {
+  .header-filter-player-container {
+    display: none;
+  }
+  .header-filter-player-position table {
+    display: none;
+  }
+
+  .header-filter-player-position {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #292929;
+    background: var(--dark);
+    height: 3rem;
+  }
+  .header-filter-btn-this-team {
+    border: none;
+  }
+  .header-filter-player {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .header-filter-player .btn-secondary-player-custom-two {
+    height: 3rem;
+    width: 10rem;
+  }
+  .player-container-cards {
+    width: 100%;
+    overflow-y: auto;
+    margin: 0 0 2.5rem 0;
+  }
+  .player-container-pagination {
+    position: absolute;
+    bottom: 0;
+  }
+}

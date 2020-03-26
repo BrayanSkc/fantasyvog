@@ -1,0 +1,88 @@
+.profile-options-settings-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  background: var(--light);
+  width: 67%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.profile-options-photo-right {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  background-color: #313131;
+  align-items: center;
+  padding-left: 2rem;
+}
+.photo-profile-config-right {
+  width: 4rem;
+  border-radius: 5rem;
+}
+.title-player-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  color: var(--light);
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  /* margin-top: .5rem; */
+}
+.change-avatar-profile {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+.profile-options-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title-options {
+  font-family: "Roboto";
+  margin: 0.5rem;
+}
+.first-row-input-profile {
+  display: flex;
+  justify-content: space-around;
+}
+.secund-row-input-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 0.9rem;
+}
+.input-setting-profile-form {
+  color: var(--dark);
+  width: 45%;
+  margin-left: 0.5rem;
+  border-color: 1px solid black;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.input-container-profile-form:valid + .label-element .content-name {
+  color: var(--dark);
+}
+.input-container-profile-form:valid {
+  border: 0.5px solid rgb(25, 25, 25, 0.5);
+  color: #313131;
+}
+.btn-footer-profile-options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.5rem;
+  background: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  height: 4rem;
+}
+.option-edit {
+  text-align: center;
+  font-size: 0.71rem;
+  color: blue;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.change-avatar-profile {
+  cursor: pointer;
+}

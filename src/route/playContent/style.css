@@ -1,0 +1,34 @@
+.title-back-play {
+  cursor: pointer;
+  color: var(--light);
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.play-content-choose-date {
+  display: flex;
+  width: 100%;
+  padding: 0.3rem 0;
+}
+.play-content-aside {
+  display: flex;
+  height: 8rem;
+  font-size: 0.8rem;
+  color: var(--light);
+  margin-bottom: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #282b6e;
+  box-shadow: 0px 2px 6px #00000066;
+  border-radius: 6px;
+}
+
+.play-content-right {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 30%;
+  margin: 2rem 0;
+ 
+}

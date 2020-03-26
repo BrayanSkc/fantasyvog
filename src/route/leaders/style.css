@@ -1,0 +1,35 @@
+.leaders-container {
+  background: rgba(28, 28, 28, 1);
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+}
+.leaders-container-box {
+  width: 80%;
+  display: flex;
+  margin-top: 2rem;
+}
+.leaders-contents-left {
+  display: flex;
+  color: var(--light);
+  flex-direction: column;
+  width: 52%;
+  border-radius: 6px 6px 0px 0px;
+
+}
+.title-header-box {
+  color: var(--light);
+  margin-bottom: 0.5rem;
+}
+/**Container Derecho**/
+.leaders-contents-right {
+  margin: 0 2rem;
+  width: 35%;
+}
+
+.leader-contents-right {
+  margin-top: 0.5rem;
+  border-radius: 6px 6px 0px 0px;
+
+}

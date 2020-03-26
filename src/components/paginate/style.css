@@ -1,0 +1,36 @@
+.paginate-container {
+  height: 2rem;
+  border: 1px solid #3B3B3B;
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+.item-paginate-background {
+  display: flex;
+}
+.li-item-paginate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: #313131;
+  color: rgb(255, 255, 255, 0.5);
+  border: 1px solid #3b3b3b;
+  font-size: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.li-active-paginate {
+  background: #212121;
+  border: 1px solid #3b3b3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  font-weight: 400;
+}

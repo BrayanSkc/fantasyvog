@@ -1,0 +1,100 @@
+.profile-container-settings {
+  width: 100%;
+  /* height: 100%; */
+  background: rgb(49, 49, 49, 0.8);
+  padding-top: 2rem;
+}
+
+.profile-container-settings-screen {
+  height: 100%;
+  background: rgb(49, 49, 49, 0.8);
+  padding-top: 2rem;
+}
+
+.profile-settings-background {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+.profile-settings-title {
+  font: Bold 1.2rem Roboto;
+  color: var(--light);
+}
+.profile-options-settings {
+  display: flex;
+  height: calc(100% - 1.5rem);
+}
+
+.profile-options-settings a {
+  text-decoration: none;
+  color: var(--light);
+}
+.profile-options-settings-left {
+  margin-top: 2rem;
+  background: #1c1c1c 0% 0% no-repeat padding-box;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  color: var(--light);
+  width: 30%;
+  margin-bottom: auto;
+}
+.left-options-li {
+  cursor: pointer;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.active-setting {
+  background: transparent linear-gradient(180deg, #ffa000 0%, #ff7f00 100%) 0%;
+}
+.profile-options-settings-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  background: var(--light);
+  width: 67%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.setting-modal-mobile-options {
+  display: none;
+}
+@media (max-width: 599px) {
+  .setting-modal-mobile-options {
+    display: block;
+  }
+  .profile-settings-background {
+    width: 96%;
+    margin: 0;
+  }
+  .profile-settings-title {
+    display: none;
+  }
+
+  .profile-options-settings-left {
+    display: none;
+  }
+  .profile-options-settings-right {
+    width: 100%;
+  }
+  .letter-golden {
+    color: var(--danger);
+  }
+  .first-row-input-profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .secund-row-input-profile {
+    display: flex;
+    width: 90%;
+    margin-left: 0;
+  }
+  .input-setting-profile-form {
+    width: 90%;
+  }
+}

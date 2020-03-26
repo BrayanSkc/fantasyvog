@@ -1,0 +1,51 @@
+.settings-start-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 2rem 4rem;
+  color: aliceblue;
+}
+.input-settings-start {
+  background: #292929;
+  border: 2rem solid red;
+  border-radius: 2px;
+  color: var(--light);
+  font-weight: 600;
+}
+.container-settings-start {
+  margin-bottom: 0.8rem;
+}
+.icon-settings-emoji {
+  top: 1.5rem;
+  right: 0.5rem;
+  position: relative;
+  color: var(--primary);
+  cursor: pointer;
+}
+.label-element {
+  color: var(--light);
+}
+.container-settings-start:valid + .label-element .content-name {
+  color: var(--light);
+}
+.input-settings-start:focus + .label-element .content-name {
+  color: var(--color);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.btn-start-finish {
+    display: flex;
+  height: 2.5rem;
+  background: #e5a700;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  width: 70%;
+  margin: auto;
+  color: var(--light);
+  text-decoration: none;
+align-items: center;
+justify-content: center;
+
+}

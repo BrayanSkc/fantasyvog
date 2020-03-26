@@ -1,0 +1,36 @@
+.container-notification-profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    background: white;
+    width: 67%;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+.options-notifications {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.li-notification-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0 1.5rem 0 1rem;
+  margin: 0.5rem 1rem 0.5rem 0rem;
+  height: 2rem;
+  border-bottom: 1px solid #E3E3E3;
+}
+.li-options-title {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  border: 1px solid #e3e3e3;
+  height: 3rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding-left:1rem;
+  margin-bottom: .5rem;
+}

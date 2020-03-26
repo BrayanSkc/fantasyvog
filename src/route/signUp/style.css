@@ -1,0 +1,177 @@
+.container-sign-up {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.91);
+}
+.text-form {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.form-sign-up {
+  top: 5rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  border-radius: 0.25rem;
+  width: 40%;
+  height: 34.09rem;
+  padding: 2.5rem 5rem;
+  background: rgb(255, 255, 255);
+  color: #444;
+  overflow-y: auto;
+}
+
+.container-sign-up ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.container-sign-up ::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+.container-sign-up::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.container-sign-up::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+.container-sign-up::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.container-sign-up::-webkit-scrollbar-track:hover,
+.container-sign-up::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+.header-sign-up {
+  font-weight: bold;
+  font: Bold 1.3rem Roboto;
+  text-align: start;
+  color: var(--color);
+  margin-bottom: 1rem;
+}
+.input-sign-custom {
+  width: 60%;
+  margin: 0;
+}
+.sign-up-description {
+  font: Bold 1.1rem Roboto;
+}
+.input-sign-custom {
+  width: 100%;
+  display: inline-table;
+  height: 3.25rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.input-element:valid + .label-element .content-name {
+  color: #313131;
+  font-weight: bold;
+}
+.input-element:valid {
+  border: 0.5px solid rgb(25, 25, 25, 0.5);
+}
+.btn-sign-up {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  width: 100%;
+  background: var(--green);
+}
+.sign-container-city {
+  display: flex;
+}
+
+.sign-container-city input {
+  width: 95%;
+}
+.checkbox-container-sign-up{
+  display: flex;
+  margin: 1.2rem 0;
+}
+.container-sign-check{
+margin:0;
+padding:0;
+height:1rem;
+width:1rem;
+margin-right:0.5rem;
+}
+.input-sign-check{
+  padding: 0;
+  margin:0
+
+}
+.text-terms-sign{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.custom-select-team {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-family: "Verdana", sans-serif;
+  color: #444;
+  padding: 0.4rem 0.2rem;
+  width: 70%;
+  max-width: 100%;
+  border: 1px solid var(--color);
+  border-radius: 0.3rem;
+}
+
+.container-error-sign {
+  top: 3rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 40%;
+  opacity: 80%;
+  z-index: 2;
+}
+
+.message-error-sign {
+  padding: 0;
+  background-color: var(--danger);
+  text-align: center;
+  color: var(--light);
+  border-radius: 2rem;
+}
+
+@media (max-width: 599px) {
+  .form-sign-up {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 95%;
+    padding: 1rem;
+  }
+  .header-sign-up {
+    margin: 2rem 0 1rem 0;
+  }
+  .sign-up-description {
+    font: Bold 1.1rem Roboto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .input-sign-custom {
+    width: 90%;
+    display: inline-table;
+    height: 3.25rem;
+    margin: auto;
+  }
+  .input-element:valid + .label-element .content-name {
+    color: #313131;
+    font-weight: bold;
+  }
+  .input-element:valid {
+    border: 0.5px solid rgb(25, 25, 25, 0.5);
+  }
+  .custom-select-team {
+    width: 90%;
+    padding: 0.5rem 0;
+    margin: 1rem;
+  }
+}
