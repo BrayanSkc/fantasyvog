@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Input from "../../components/input";
 import Button from "../../components/button";
 import { postRegistration } from "../../utils/function";
+import Check from "../../assets/images/Check.png";
 import "./style.css";
 import { LOGIN } from "../../routes";
 import { RouteComponentProps } from "react-router-dom";
 import Recaptcha from "react-recaptcha";
+import Modal from "../../components/modal";
 
 export interface SignUpProps extends RouteComponentProps {}
 
@@ -22,6 +24,7 @@ const SignUp: React.SFC<SignUpProps> = ({ history }) => {
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("All fields are required");
   const [captcha, setCaptcha] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   //Fetch
 
@@ -41,6 +44,10 @@ const SignUp: React.SFC<SignUpProps> = ({ history }) => {
     }
   };
 
+  const loginToGo = () => {
+    setOpenModal(false);
+    history.push(LOGIN);
+  };
   const isValidEmail = (mail: string) => {
     return /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$/.test(mail);
   };
@@ -68,7 +75,7 @@ const SignUp: React.SFC<SignUpProps> = ({ history }) => {
     setMessage("Passwords do not match");
     return false;
   };
- 
+
   const isValidBirth = (date: any) => {
     if (date === undefined || date === "") {
       setMessage("Invalid birthday");
@@ -77,19 +84,6 @@ const SignUp: React.SFC<SignUpProps> = ({ history }) => {
     }
     return true;
   };
-
-  // const resetControls = () => {
-  //   setFirstName("");
-  //   setLastName("");
-  //   setNickname("");
-  //   setEmail("");
-  //   setPassword("");
-  //   setPass("");
-  //   setBirth("");
-  //   setTeam("");
-  //   setError(false);
-  // };
-
   const sendValues = async () => {
     if (
       !isValidEmail(email) ||
@@ -104,7 +98,8 @@ const SignUp: React.SFC<SignUpProps> = ({ history }) => {
       setError(true);
     } else {
       await postRegistration(register);
-      history.push(LOGIN);
+      //      history.push(LOGIN);
+      setOpenModal(true);
       return true;
     }
   };
@@ -296,21 +291,35 @@ const SignUp: React.SFC<SignUpProps> = ({ history }) => {
               I Agree the Terms of Services and Privacy Policy.
             </span>
           </div>
-          <Recaptcha
-            sitekey="6LddRN8UAAAAAHFY8FXMGshwc7R_6VStel-Bh6zY"
-            render="explicit"
-            onloadCallback={recaptchaLoaded}
-            verifyCallback={verifyCaptcha}
-          />
 
-
-
-
+          <div className="recaptcha-contest-sign-up" id="recaptcha-contest">
+            <Recaptcha
+              sitekey="6LddRN8UAAAAAHFY8FXMGshwc7R_6VStel-Bh6zY"
+              render="explicit"
+              onloadCallback={recaptchaLoaded}
+              verifyCallback={verifyCaptcha}
+              size="normal"
+            />
+          </div>
 
           <Button className={"btn-sign-up"} onClick={sendValues}>
             {"Register"}
           </Button>
         </form>
+        <Modal
+          isShow={openModal}
+          onClose={loginToGo}
+          containerModal={{
+            header: "Account Created",
+            img: Check,
+            body:
+              "Please, check your email for the validation link to activate your account.",
+            footerL: "Didn’t receive the validation link?",
+            footerR: "Click here to resend.",
+            button: "OK",
+            recovery: false
+          }}
+        />
       </div>
     </>
   );

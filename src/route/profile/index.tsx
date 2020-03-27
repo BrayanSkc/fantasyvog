@@ -32,7 +32,6 @@ const Profile: React.SFC<ProfileProps> = () => {
         setViewType("notification");
         setClassRightOption("container-notification-profile");
         setTakeScreen(true);
-
         break;
     }
   };
@@ -87,7 +86,9 @@ const Profile: React.SFC<ProfileProps> = () => {
             {viewType === "profile" ? (
               <Information />
             ) : viewType === "balance" ? (
-              <Accounts />
+              <Accounts
+              onClick={()=>setTakeScreen(false)}
+              />
             ) : (
               <Notification />
             )}

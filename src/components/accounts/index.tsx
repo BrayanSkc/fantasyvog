@@ -5,12 +5,24 @@ import Input from "../input";
 import Switch from "react-switch";
 import classNames from "classnames";
 
-export interface BalanceProps {}
+export interface BalanceProps {
+onClick:Function;
 
-const Balance: React.SFC<BalanceProps> = () => {
+}
+
+const Balance: React.SFC<BalanceProps> = ({onClick}) => {
   const [isAccounts, setIsAccounts] = useState(true);
   const [checkedLimits, setCheckedLimits] = useState(true);
   const [checkedLoss, setCheckedLoss] = useState(true);
+
+  const limitsChange = () => {
+    try {
+      setIsAccounts(false);
+      onClick();
+    } catch (err) {
+      console.log("error Limits");
+    }
+  };
 
   return (
     <>
@@ -30,7 +42,7 @@ const Balance: React.SFC<BalanceProps> = () => {
             "btn-header-balance-primary": !isAccounts,
             "btn-header-balance-secondary": !!isAccounts
           })}
-          onClick={() => setIsAccounts(false)}
+          onClick={limitsChange}
         >
           Limits
         </Button>
@@ -176,10 +188,10 @@ const Balance: React.SFC<BalanceProps> = () => {
             />
           </div>
           <div className="btn-footer-profile-options">
-            <Button className="btn-options-cancel" id="cancel-changes">
+            <Button className="btn-avatar-primary" id="cancel-changes">
               Cancel
             </Button>
-            <Button className="btn-options-save" id="save-changes">
+            <Button className="btn-avatar-secondary" id="save-changes">
               Save Changes
             </Button>
           </div>

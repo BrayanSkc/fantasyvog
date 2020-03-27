@@ -47,7 +47,7 @@ const PlayOne: React.SFC<PlayOneProps> = ({ history }) => {
             <CardContestOne node={stepView} onClick={changeView} />
           </div>
           {stepView === 4 ? <YourPlace /> : null}
-          {stepView > 1 ? <YourTeam /> : null}
+          {stepView > 1 ? <YourTeam isInitial={stepView}/> : null}
           {stepView === 3 ? <LiveScoring /> : null}
 
           <div className="play-content-choose-date">

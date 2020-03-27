@@ -13,10 +13,35 @@
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 28rem;
   height: 21rem;
+}
+.login-form-none {
+  display: none;
+}
+.new-login-contest {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 4rem 1rem 4rem;
 }
+/*Error*/
+.container-error-login {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 70%;
+}
+
+.message-error-login {
+  padding: 0.3rem 0;
+  background-color: var(--danger);
+  text-align: center;
+  color: var(--light);
+  border-radius: 0.2rem;
+}
+
+/**/
 .title-login-form {
   color: var(--primary);
   font-family: "Roboto";
@@ -30,6 +55,7 @@
   font-size: 0.6rem;
   text-align: right;
   font-weight: bolder;
+  cursor: pointer;
 }
 .login-btn-principal {
   padding: 0.8rem;
@@ -38,10 +64,8 @@
   margin: 0.5rem 1rem;
   font-weight: 900;
   border-radius: 6px;
-  background: var(--primary) 0% 0% no-repeat padding-box;
+  background: var(--primary);
   box-shadow: 0px 15px 30px #00000040;
-  backdrop-filter: blur(undefined);
-  -webkit-backdrop-filter: blur(undefined);
 }
 .new-user-login-form {
   text-align: center;
@@ -54,14 +78,24 @@
   color: var(--primary);
   font-weight: 400;
 }
-.login-input-container {
-  margin-bottom: 0;
-  margin-top: 1rem;
+.label-new-login {
+  color: #1c1c1c;
+  font-weight: 500;
+  margin: 1rem 0 5px 0;
 }
-.login-input-input {
-  width: 100%;
+.new-login-input-input {
+  height: 2rem;
+  background: #ffffff;
+  border: 1px solid #d3d3d3;
   border-radius: 3px;
-  padding: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.new-login-input-input::placeholder {
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 0.5;
 }
 
 @media (min-width: 1401px) {
@@ -71,12 +105,6 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .login-form-container {
-    background-color: #fff;
-    box-shadow: 0 0.8rem 1.2rem #00000029;
-    width: 30rem;
-    height: 20rem;
-  }
 }
 
 /*     ##Device = Tablets, Ipads (portrait)
@@ -99,9 +127,130 @@
     */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .login-form-container {
+    width: 90%;
+    height: 85%;
+  }
+
+  .new-login-contest {
+    padding: 8vh 6vh 8vh 6vh;
+  }
+  .title-login-form {
+    color: #ffb238;
+    font-weight: 900;
+    font-size: 5vh;
+  }
+  .forget-login-form {
+    font-size: 2vh;
+    margin: 10px;
+  }
+  .login-btn-principal {
+    width: 100%;
+    align-self: center;
+    margin: 0.5rem;
+    padding: 0;
+    height: 4rem;
+    font-weight: 900;
+    font-size: 3vh;
+    border-radius: 6px;
+    background: #ffb238;
+    box-shadow: 0px 15px 30px #00000040;
+  }
+  .label-new-login {
+    font-weight: 600;
+    font-size: 3vh;
+  }
+  .new-login-input-input {
+    font-weight: 400;
+    font-size: 3vh;
+    height: 3rem;
+    margin-left: 5px;
+  }
+  .new-user-login-form {
+    font-size: 2.5vh;
+    margin: 2vh;
+  }
 }
 /*    ##Device = Most of the Smartphones Mobiles (Portrait)
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .login-form-container {
+    width: 90%;
+    height: 80%;
+  }
+  .new-login-contest {
+    padding: 2rem 1rem;
+    margin: auto 0;
+  }
+  .title-login-form {
+    color: #ffb238;
+    font-weight: 900;
+    font-size: 4vh;
+  }
+  .forget-login-form {
+    font-size: 0.6rem;
+    margin: 5px;
+  }
+  .login-btn-principal {
+    width: 100%;
+    align-self: center;
+    margin: 0.5rem;
+    padding: 0;
+    height: 2rem;
+    font-weight: 900;
+    font-size: 2.5vh;
+    border-radius: 6px;
+    background: #ffb238;
+    box-shadow: 0px 15px 30px #00000040;
+  }
+  .label-new-login {
+    font-weight: 600;
+    font-size: 2.5vh;
+  }
+  .new-login-input-input {
+    font-weight: 400;
+    font-size: 2.7vh;
+    margin-left: 5px;
+  }
+}
+@media (min-width: 230px) and (max-width: 319px) {
+  .login-form-container {
+    width: 90%;
+    height: 80%;
+  }
+  .new-login-contest {
+    padding: 2rem 1rem;
+    margin: auto 0;
+  }
+  .title-login-form {
+    color: #ffb238;
+    font-weight: 900;
+    font-size: 4vh;
+  }
+  .forget-login-form {
+    font-size: 1.5vh;
+    margin: 5px;
+  }
+  .login-btn-principal {
+    width: 100%;
+    align-self: center;
+    margin: 0.5rem;
+    padding: 0;
+    height: 2rem;
+    font-weight: 900;
+    font-size: 2vh;
+    border-radius: 6px;
+    background: #ffb238;
+    box-shadow: 0px 15px 30px #00000040;
+  }
+  .label-new-login {
+    font-weight: 600;
+    font-size: 2vh;
+  }
+  .new-login-input-input {
+    font-weight: 400;
+    font-size: 2vh;
+    margin-left: 5px;
+  }
 }

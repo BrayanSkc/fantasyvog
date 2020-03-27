@@ -87,7 +87,7 @@
 }
 
 .balance-input-transaction-custom {
-  width: 50%;
+  width: 100%;
   height: 2rem;
   background: var(--light);
   padding-top: 0;

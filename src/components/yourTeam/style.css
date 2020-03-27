@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: var(--light);
   border-radius: 6px;
   overflow: hidden;
   margin: 0.5rem 0;
@@ -15,6 +14,62 @@
   background: #f4f4f4;
   border-radius: 6px 6px 0px 0px;
 }
+.your-team-header-black {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  height: 4rem;
+  background: #313131;
+  border: 1px solid #292929;
+  border-radius: 6px 6px 0px 0px;
+}
+.header-position-team-black {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.left-header-team-black {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.title-position-black {
+  font-weight: 900;
+  color: var(--diners);
+  text-shadow: 0px 0px 15px var(--diners);
+}
+.right-header-team-black {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.current-winning-team {
+  display: flex;
+  flex-direction: column;
+}
+.title-team-points {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+}
+.current-team-points {
+  display: flex;
+  flex-direction: column;
+}
+.points-current-winning{
+
+}
+
+.profile-team-black {
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
 .title-your-team {
   font-weight: bold;
   color: #343434;
@@ -48,8 +103,8 @@
   font-size: 0.8rem;
 }
 
-.card-team-contest{
-display: flex;
-flex-direction: column;
-margin-top: 2rem;
+.card-team-contest {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }

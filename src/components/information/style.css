@@ -62,6 +62,8 @@
 }
 .input-container-profile-form:valid + .label-element .content-name {
   color: var(--dark);
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 .input-container-profile-form:valid {
   border: 0.5px solid rgb(25, 25, 25, 0.5);

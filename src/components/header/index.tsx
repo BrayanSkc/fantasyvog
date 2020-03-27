@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState,  useMemo } from "react";
-import Logo from '../../assets/images/Logo.png'
+import React, { useState, useMemo } from "react";
+import Logo from "../../assets/images/Logo.png";
 import Path from "../path";
 import Button from "../button";
 import Coin from "../../assets/images/cashLogo.png";
@@ -65,54 +65,55 @@ const Header: React.SFC<HeaderProps> = () => {
           </>
         ) : (
           <>
-            <Path
-              path={PLAY}
-              className={classNames({
-                "link-header-primary-login": !isActive("/play"),
-                "link-header-primary-login-active": isActive("/play")
-              })}
-            >
-              Play
-            </Path>
-            <Path
-              path={ENTRIES}
-              className={classNames({
-                "link-header-primary-login": !isActive("/entries"),
-                "link-header-primary-login-active": isActive("/entries")
-              })}
-            >
-              Entries
-            </Path>
-            {/* <Path path={POSITIONS} className="link-header-primary-login">
-              Positions
-            </Path> */}
-           
-            <Path
-              path={FRIENDS}
-              className={classNames({
-                "link-header-primary-login": !isActive("/friends"),
-                "link-header-primary-login-active": isActive("/friends")
-              })}
-            >
-              Friends{" "}
-            </Path>
+            <div className="header-menu-open-mobile">
+              <Path
+                path={PLAY}
+                className={classNames({
+                  "link-header-primary-login": !isActive("/play"),
+                  "link-header-primary-login-active": isActive("/play")
+                })}
+              >
+                Play
+              </Path>
+              <Path
+                path={ENTRIES}
+                className={classNames({
+                  "link-header-primary-login": !isActive("/entries"),
+                  "link-header-primary-login-active": isActive("/entries")
+                })}
+              >
+                Entries
+              </Path>
+              <Path
+                path={FRIENDS}
+                className={classNames({
+                  "link-header-primary-login": !isActive("/friends"),
+                  "link-header-primary-login-active": isActive("/friends")
+                })}
+              >
+                Friends{" "}
+              </Path>
 
-            <Path path={NEWS}  className={classNames({
-                "link-header-primary-login": !isActive("/news"),
-                "link-header-primary-login-active": isActive("/news")
-              })}>
-              News
-            </Path>
+              <Path
+                path={NEWS}
+                className={classNames({
+                  "link-header-primary-login": !isActive("/news"),
+                  "link-header-primary-login-active": isActive("/news")
+                })}
+              >
+                News
+              </Path>
 
-            <Path
-              path={LEADER}
-              className={classNames({
-                "link-header-primary-login": !isActive("/leader"),
-                "link-header-primary-login-active": isActive("/leader")
-              })}
-            >
-              Leaders
-            </Path>
+              <Path
+                path={LEADER}
+                className={classNames({
+                  "link-header-primary-login": !isActive("/leader"),
+                  "link-header-primary-login-active": isActive("/leader")
+                })}
+              >
+                Leaders
+              </Path>
+            </div>
             <div className="container-cash-header">
               <div className="label-cash-header">
                 <img src={Coin} alt="money-cash" className="coin-image-size" />
@@ -136,6 +137,58 @@ const Header: React.SFC<HeaderProps> = () => {
           </>
         )}
       </div>
+      {token&&(
+      <div className="second-container-header">
+        <Path
+          path={PLAY}
+          className={classNames({
+            "link-header-primary-login": !isActive("/play"),
+            "link-header-primary-login-active": isActive("/play")
+          })}
+        >
+          Play
+        </Path>
+        <Path
+          path={ENTRIES}
+          className={classNames({
+            "link-header-primary-login": !isActive("/entries"),
+            "link-header-primary-login-active": isActive("/entries")
+          })}
+        >
+          Entries
+        </Path>
+        <Path
+          path={FRIENDS}
+          className={classNames({
+            "link-header-primary-login": !isActive("/friends"),
+            "link-header-primary-login-active": isActive("/friends")
+          })}
+        >
+          Friends{" "}
+        </Path>
+
+        <Path
+          path={NEWS}
+          className={classNames({
+            "link-header-primary-login": !isActive("/news"),
+            "link-header-primary-login-active": isActive("/news")
+          })}
+        >
+          News
+        </Path>
+
+        <Path
+          path={LEADER}
+          className={classNames({
+            "link-header-primary-login": !isActive("/leader"),
+            "link-header-primary-login-active": isActive("/leader")
+          })}
+        >
+          Leaders
+        </Path>
+      </div>
+      )}
+
       <Modal
         isShow={openModal}
         isSettings={true}

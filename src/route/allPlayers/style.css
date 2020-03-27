@@ -1,5 +1,6 @@
 .all-players-container {
   width: 100%;
+  min-height: 100%;
   background: rgba(28, 28, 28, 1);
   padding-bottom: 1rem;
 

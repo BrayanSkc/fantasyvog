@@ -186,7 +186,7 @@ setOpenModal(true)
             onChange={({ target: { value } }: any) => {
               setPassword(value);
             }}
-            label="address"
+            label="Address"
             value={address}
           />
         </div>
@@ -202,7 +202,7 @@ setOpenModal(true)
             onChange={({ target: { value } }: any) => {
               setEmail(value);
             }}
-            label="province"
+            label="Province"
             value={province}
           />
           <Input
@@ -215,7 +215,7 @@ setOpenModal(true)
             onChange={({ target: { value } }: any) => {
               setPhone(value);
             }}
-            label="city"
+            label="City"
             value={city}
           />
         </div>
@@ -230,7 +230,7 @@ setOpenModal(true)
             onChange={({ target: { value } }: any) => {
               setPassword(value);
             }}
-            label="code Postal"
+            label="Code Postal"
             value={codePostal}
           />
         </div>

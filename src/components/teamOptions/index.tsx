@@ -6,17 +6,26 @@ import Button from "../button";
 import classNames from "classnames";
 
 export interface TeamOptionsProps {
-  onClick:Function
+  onClick: Function;
 }
 
-const TeamOptions: React.SFC<TeamOptionsProps> = ({onClick}) => {
+const TeamOptions: React.SFC<TeamOptionsProps> = ({ onClick }) => {
   const [isCustom, setIsCustom] = useState(false);
   const [isClassic, setIsClassic] = useState(false);
-  const [nextStep, setNextStep] = useState(false);
+  const [isValid, setIsValid] = useState(false);
 
-  const goToDate = () => {
-    if (isCustom) {
-      setNextStep(true);
+  const changeTeam = (type: string) => {
+    switch (type) {
+      case "classic":
+        setIsCustom(false);
+        setIsClassic(true);
+        setIsValid(true);
+        break;
+      case "custom":
+        setIsClassic(false);
+        setIsCustom(true);
+        setIsValid(true);
+        break;
     }
   };
   return (
@@ -26,7 +35,7 @@ const TeamOptions: React.SFC<TeamOptionsProps> = ({onClick}) => {
           "options-team": !isClassic,
           "options-team-selected": !!isClassic
         })}
-        onClick={() => setIsClassic(!isClassic)}
+        onClick={() => changeTeam("classic")}
       >
         <div className="img-left-team">
           <img src={Classic} alt="pic-field" className="picture-field-left" />
@@ -44,7 +53,7 @@ const TeamOptions: React.SFC<TeamOptionsProps> = ({onClick}) => {
           "options-team": !isCustom,
           "options-team-selected": !!isCustom
         })}
-        onClick={() => setIsCustom(!isCustom)}
+        onClick={() => changeTeam("custom")}
       >
         <div className="img-left-team">
           <img src={Custom} alt="pic-field" className="picture-field-left" />
@@ -59,8 +68,8 @@ const TeamOptions: React.SFC<TeamOptionsProps> = ({onClick}) => {
 
       <Button
         className={classNames({
-          "btn-team-options": !isClassic,
-          "btn-team-options-selected": !!isClassic
+          "btn-team-options": !isValid,
+          "btn-team-options-selected": !!isValid
         })}
         onClick={onClick as any}
       >

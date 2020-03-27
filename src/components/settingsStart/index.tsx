@@ -3,7 +3,7 @@ import "emoji-mart/css/emoji-mart.css";
 import { Picker } from "emoji-mart";
 import "./style.css";
 import Input from "../input";
-import { PLAYERS } from '../../routes';
+import { ALL_PLAYERS } from '../../routes';
 import Path from "../path";
 
 
@@ -14,9 +14,6 @@ const SettingStart: React.SFC<SettingStartProps> = () => {
   const [viewPicker, setViewPicker] = useState(false);
   const [contest, setContest] = useState("");
   const [entry, setEntry] = useState("₦");
-
-  const goToPlay=()=>{
-}
 
 
   return (
@@ -89,7 +86,7 @@ const SettingStart: React.SFC<SettingStartProps> = () => {
           container: "container-settings-start"
         }}
       />
-      <Path path={PLAYERS} className="btn-start-finish"> CREATE CONTEST</Path>
+      <Path path={ALL_PLAYERS} className="btn-start-finish"> CREATE CONTEST</Path>
     </div>
   );
 };

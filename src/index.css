@@ -2,18 +2,17 @@
   --dark: #000000;
   --light: #fefefe;
   --borders: #989a99;
-  --lineStep: #3E3E3E;
+  --lineStep: #3e3e3e;
   --color: #ffa500;
   --color2: #ff9933;
   --color3: #ff6600;
-  --green: #12B731;
+  --green: #12b731;
   --link: #ff5353;
-  --primary:#ffb300;
-  --danger:#FF5757;
-  --golden:#E5A700;
-  --diners:#0b9321;
-  --negative: #FF0000;
-  
+  --primary: #ffb300;
+  --danger: #ff5757;
+  --golden: #e5a700;
+  --diners: #0b9321;
+  --negative: #ff0000;
 }
 html,
 body {
@@ -21,7 +20,7 @@ body {
   width: 100%;
   min-height: 100vh;
   color: var(--dark);
-  font-family: "Roboto", 'Titillium Web';
+  font-family: "Roboto", "Titillium Web";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -62,11 +61,10 @@ hr {
   width: 100%;
   flex: 1;
   overflow-y: auto;
-  background: url('../src/assets/images/IMG1.png');
+  background: url("../src/assets/images/IMG1.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
 }
 .margin-1 {
   margin: 1rem;
@@ -95,4 +93,34 @@ hr {
   height: 100%;
   display: flex;
   flex-flow: column;
+}
+
+/* #root { display:flex; }
+         @media only screen and (orientation:portrait){
+            #app-principal-content {  
+                  -webkit-transform: rotate(90deg);
+                  -moz-transform: rotate(90deg);
+                  -o-transform: rotate(90deg);
+                  -ms-transform: rotate(90deg);
+                  transform: rotate(90deg);
+                 }
+ 
+         }
+         @media only screen and (orientation:landscape){
+            #root {  
+              display: block;
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                 }
+         } */
+
+@media (min-width: 230px) and (max-width: 767px) {
+  .app-principal-content {
+    background: rgb(0, 0, 0, 0.91);
+    min-height: 100%;
+
+  }
 }

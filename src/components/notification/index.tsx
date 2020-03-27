@@ -5,10 +5,10 @@ import "./style.css";
 export interface NotificationProps {}
 
 const Notification: React.SFC<NotificationProps> = () => {
-  const [checkedEmail, setCheckedEmail] = useState(false);
-  const [checkedFriends, setCheckedFriends] = useState(false);
+  const [checkedEmail, setCheckedEmail] = useState(true);
+  const [checkedFriends, setCheckedFriends] = useState(true);
   const [checkedChallenge, setCheckedChallenge] = useState(false);
-  const [checkedLive, setCheckedLive] = useState(false);
+  const [checkedLive, setCheckedLive] = useState(true);
   const [checkedResults, setCheckedResults] = useState(false);
 
   return (

@@ -71,7 +71,7 @@ const Login: React.SFC<LoginProps> = ({ history }) => {
       <div
         className={classNames({
           "log-form": !openModal,
-          "log-form-none": !!openModal
+          "l-form-none": !!openModal
         })}
       >
         {error && (

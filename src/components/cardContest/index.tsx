@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import Button from "../button";
 import Path from "../path";
-import { PLAYERS } from "../../routes";
+import { ALL_PLAYERS } from "../../routes";
 
 export interface CardContestProps {}
 
@@ -33,7 +33,7 @@ const CardContest: React.SFC<CardContestProps> = () => {
               Pick’n’Go
             </Button>
           </>
-          <Path path={PLAYERS} className="btn-path-card-contest">
+          <Path path={ALL_PLAYERS} className="btn-path-card-contest">
             <span style={{ color: "#00980C", fontWeight: "bold" }}>₦500</span>
             &nbsp;to&nbsp;<b> Enter</b>
           </Path>

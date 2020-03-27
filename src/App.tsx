@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import AllPlayers from './route/allPlayers/index';
-import Login from "./route/login";
-import Fixture from "./route/fixture";
+import Login from "./route/newLogin";
 import PlayOne from './route/playOne'
-import Positions from "./route/position";
 import Start from "./route/start";
 import CheckIn from "./route/signUp";
 import Entries from "./route/entries";
-import Players from "./route/players";
 import Settings from "./route/profile";
 import Play from "./route/play";
 import PlayContent from "./route/playContent";
@@ -25,12 +22,9 @@ import {
 import {
   LOGIN,
   PLAY,
-  FIXTURE,
-  POSITIONS,
   NEWS,
   CHECK_IN,
   ENTRIES,
-  PLAYERS,
   PROFILE,
   HOME,
   FRIENDS,
@@ -64,19 +58,16 @@ const AppContent: React.SFC<RouteComponentProps> = ({ history }) => {
     <>
       <Switch>
         <Route exact path={HOME} component={Login}></Route>
-        <Route exact path={FIXTURE} component={Fixture}></Route>
         <Route exact path={PLAY} component={Play}></Route>
         <Route exact path={NEWS} component={News}></Route>
-        <Route exact path={POSITIONS} component={Positions}></Route>
         <Route exact path={ENTRIES} component={Entries}></Route>
-        <Route exact path={PLAYERS} component={AllPlayers}></Route>
         <Route exact path={PROFILE} component={Settings}></Route>
         <Route exact path={FRIENDS} component={Friends}></Route>
         <Route exact path={LEADER} component={Leaders}></Route>
         <Route exact path={START} component={Start}></Route>
         <Route exact path={PLAY_PUBLIC} component={PlayContent}></Route>
         <Route exact path={PLAY_ONE} component={PlayOne}></Route>
-        {/* <Route exact path={ALL_PLAYERS} component={AllPlayers}></Route> */}
+        <Route exact path={ALL_PLAYERS} component={AllPlayers}></Route>
         <Route render={() => <Redirect to={PLAY} />}></Route>
       </Switch>
       {loading && <Loading />}
